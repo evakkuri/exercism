@@ -1,0 +1,6 @@
+# Scala
+.metals/
+.bloop/
+.ammonite/
+metals.sbt
+target/
