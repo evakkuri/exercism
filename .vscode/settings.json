@@ -2,4 +2,22 @@
   "files.watcherExclude": {
     "**/target": true
   }
+  "[clojure]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.wordSeparators": "\t ()\"':,;~@#$%^&{}[]`",
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingQuotes": "always",
+    "editor.formatOnType": true,
+    "editor.autoIndent": "full",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "files.trimTrailingWhitespace": false,
+    "editor.matchBrackets": "never",
+    "editor.guides.indentation": false,
+    "editor.parameterHints.enabled": false,
+    "editor.unicodeHighlight.allowedCharacters": {
+      " ": true,
+      "꞉": true
+    }
+  }
 }
