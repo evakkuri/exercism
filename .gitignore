@@ -4,3 +4,6 @@
 .ammonite/
 metals.sbt
 target/
+
+# Clojure / Leiningen
+.lein-*

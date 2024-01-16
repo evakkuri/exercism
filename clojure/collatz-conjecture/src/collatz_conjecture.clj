@@ -1,6 +1,6 @@
 (ns collatz-conjecture)
 
-(use 'clojure.tools.logging)
+(require 'clojure.tools.logging)
 
 (defn collatz [num] ;; <- arglist goes here
   ;; your code goes here
