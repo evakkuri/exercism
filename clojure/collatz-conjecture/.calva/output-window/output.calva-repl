@@ -1,0 +1,128 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉user꞉>  (collatz 1)
+; Syntax error compiling at (output.calva-repl:20:12).
+; Unable to resolve symbol: collatz in this context
+clj꞉user꞉>  (collatz-conjecture/collatz 1)
+; Syntax error compiling at (output.calva-repl:23:12).
+; No such namespace: collatz-conjecture
+clj꞉user꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+clj꞉collatz-conjecture꞉>  (collatz 1)
+0
+clj꞉collatz-conjecture꞉> 
+(+ 3 1)
+; nREPL Connection was closed
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉> 
+; Jack-in done.
+clj꞉user꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+clj꞉collatz-conjecture꞉> 
+(+ 3 1)
+4
+clj꞉collatz-conjecture꞉> 
+(collatz 1)
+0
+clj꞉collatz-conjecture꞉> 
+; nREPL Connection was closed
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉> 
+; Jack-in done.
+clj꞉user꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+clj꞉collatz-conjecture꞉> 
+(+ 3 1)
+4
+clj꞉collatz-conjecture꞉> 
+(or (true) (false)) "Hello"
+"Hello"
+clj꞉collatz-conjecture꞉> 
+(or (false) (false))
+; Execution error (ClassCastException) at collatz-conjecture/eval6384 (form-init9959257672264878480.clj:81).
+; class java.lang.Boolean cannot be cast to class clojure.lang.IFn (java.lang.Boolean is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉collatz-conjecture꞉> 
+(or false false)
+false
+clj꞉collatz-conjecture꞉> 
+(collatz 0)
+; nREPL Connection was closed
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉> 
+; Jack-in done.
+clj꞉user꞉> 
+; Evaluating file: collatz_conjecture.clj
+; Syntax error compiling at (collatz_conjecture.clj:11:11).
+; Unable to resolve symbol: current-num in this context
+; Evaluation of file collatz_conjecture.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+; Syntax error compiling at (collatz_conjecture.clj:11:11).
+; Unable to resolve symbol: current-num in this context
+; Evaluation of file collatz_conjecture.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+clj꞉collatz-conjecture꞉> 
+(collatz 0)
+0
+clj꞉collatz-conjecture꞉> 
+(collatz 1)
+0
+clj꞉collatz-conjecture꞉> 
+(collatz 2)
+1
+clj꞉collatz-conjecture꞉> 
+(collatz 3)
+7
+clj꞉collatz-conjecture꞉> 
