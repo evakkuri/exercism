@@ -8,10 +8,24 @@ To get started with TDD, see the `README.md` file in your
 
 module Raindrops
   def self.convert(number)
+    sound = ""
+
     if number % 3 == 0
-      "Pling"
-    else
-      "#{number}"
+      sound += "Pling"
     end
+
+    if number % 5 == 0
+      sound += "Plang"
+    end
+
+    if number % 7 == 0
+      sound += "Plong"
+    end
+
+    if sound == ""
+      sound += "#{number}"
+    end
+
+    sound
   end
 end
